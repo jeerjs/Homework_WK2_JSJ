@@ -127,6 +127,11 @@ header {
   border-radius: 10px;
 }
 
+.btn:hover {
+  background-color: #050505;
+  color: white;
+}
+
 .floatleft1 {
   display: flex;
   float: left;
