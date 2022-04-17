@@ -17,14 +17,6 @@ ul {
 a {
   text-decoration: none;
 }
-.banner {
-  text-align: center;
-  color: black;
-  background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
-  list-style: none;
-  text-decoration: none;
-}
 
 nav {
   display: flex;
@@ -102,28 +94,38 @@ header {
   top: 0px;
   width: 100%;
 }
-
-.subheadingimg {
-  display: flex;
-  width: 100%;
-  max-height: 1%;
-  margin-top: 8px;
-  height: 500px;
-  border: black 5px;
-  background-position: center;
+.banner {
+  text-align: center;
+  color: black;
   background-size: cover;
-  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  background-image: linear-gradient(
+      to top,
+      rgba(20, 20, 20, 0.7),
+      rgba(133, 133, 133, 0.2)
+    ),
+    url(../Assets/Images/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg);
+  height: 500px;
+  margin-top: 30px;
 }
-/* } linear-gradient(
-  to top, */
-/* rgba (121, 9, 9, 50) rgba (121, 9, 9, 10) */
+.banner:hover {
+  background-image: url(../Assets/Images/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg);
+}
 
 .banner h1 {
   position: relative;
-  top: 100px;
+  top: 15px;
   background-color: silver;
   font-family: Helvetica, sans-serif;
-  border-radius: 20px;
+  border-radius: 15px;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner div a {
@@ -244,11 +246,18 @@ header {
   justify-content: left;
   width: 100%;
   margin-bottom: 100px;
+  margin-top: 30px;
 }
 
 .decks:hover {
   background-color: lightgrey;
   height: 100%;
+}
+
+@media screen and (max-width: 596px) {
+  .decks {
+    margin-top: 100px;
+  }
 }
 
 .imagedeck {
