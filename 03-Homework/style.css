@@ -4,6 +4,7 @@
 
 /* default body css settings */
 body {
+  display: 100%;
   background-color: silver;
   margin: 0px;
   padding: 0px;
@@ -17,14 +18,12 @@ a {
   text-decoration: none;
 }
 .banner {
-  min-height: 100vh;
-  position: relative;
   text-align: center;
   color: black;
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
   background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 nav {
@@ -34,20 +33,13 @@ nav {
   height: 120px;
   background-color: white;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
-  padding: 0px 5%;
-  margin-bottom: 20px;
-  align-items: center;
-  position: fix;
 }
 
 @media screen and (max-width: 596px) {
   .nav-container {
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 100px;
     text-align: center;
     position: relative;
-    top: 0px;
     height: 100%;
   }
 }
@@ -86,7 +78,7 @@ nav ul li a:hover {
   border: #050505;
   border-width: 5px;
   border-radius: 20px;
-  width: 205px;
+  width: 300px;
   min-width: 205px;
 }
 
@@ -109,14 +101,30 @@ header {
 .subheadingimg {
   display: flex;
   width: 100%;
-  max-height: 100%;
+  max-height: 1%;
   margin-top: 8px;
+  height: 500px;
   border: black 5px;
 }
-@media screen and (max-width: 596px) {
-  .subheadingimg {
-    display: none;
-  }
+
+.banner h1 {
+  position: relative;
+  top: 100px;
+  background-color: silver;
+  font-family: Helvetica, sans-serif;
+  border-radius: 20px;
+}
+
+.banner div a {
+  position: relative;
+  top: 250px;
+  width: 100px;
+  height: 50px;
+  font-family: Helvetica, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .floatleft1 {
@@ -128,8 +136,10 @@ header {
   margin-right: 30px;
   justify-content: center;
   text-align: center;
-  font-size: 2vw;
   align-items: center;
+  font-size: 20px;
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .floatleft2 {
@@ -143,7 +153,10 @@ header {
   align-items: center;
   font-size: 2vw;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 596px) {
@@ -163,24 +176,18 @@ header {
 }
 
 .aboutmep {
-  font-size: 1.5vw;
-  min-width: 300px;
-  justify-content: center;
-  line-height: 3vw;
+  line-height: 4vw;
   padding: 2px;
-  margin-bottom: 50px;
-  margin-left: 10px;
 }
 
 .aboutmes {
   position: relative;
   left: -50px;
-  flex-wrap: wrap;
   margin: 50px;
   justify-content: left;
   width: 100%;
-  margin-bottom: 100px;
-  font-size: 2vw;
+  margin-bottom: 50px;
+  font-size: 15px;
   height: 300px;
 }
 
@@ -191,7 +198,7 @@ header {
   margin: 0 50px;
   justify-content: left;
   width: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 .imagedeck {
   flex-wrap: wrap;
@@ -200,41 +207,56 @@ header {
   padding: 20px;
   width: auto;
   min-width: 3594.094px;
+  position: relative;
+  top: 30px;
+  border-radius: 10%;
 }
 
 .contactmes {
+  display: flex;
   position: relative;
   left: -50px;
   flex-wrap: wrap;
   margin: 0 50px;
   justify-content: left;
   width: 100%;
-  margin-bottom: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 596px) {
+  .contactmes {
+    flex-direction: column;
+  }
+  .floatright3 {
+    height: 300px;
+  }
 }
 
 .floatleft3 {
   display: flex;
   float: left;
-  height: 100px;
+  height: 300px;
   width: 30%;
+  min-width: 30%;
   border-right: solid #050505 3px;
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 2vw;
   margin-top: 50px;
-
-  @media screen and (max-width: 1020px) {
-    .contactmes {
-      margin-top: 100px;
-      align-items: center;
-    }
-  }
+  font-size: 15px;
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 0px;
 }
 
 .floatright3 {
+  display: flex;
   float: right;
   width: 70%;
+  min-width: 70%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .floatright3 a {
@@ -242,7 +264,18 @@ header {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  justify-content: center;
   position: relative;
-  top: -500px;
+  top: 30px;
+  justify-content: space-between;
+  font-size: 20px;
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 800px) {
+  .floatright3 {
+    flex-direction: column;
+  }
 }
