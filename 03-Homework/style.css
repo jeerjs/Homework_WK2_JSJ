@@ -82,8 +82,13 @@ nav ul li a:hover {
   min-width: 205px;
 }
 
-.logo a {
-  color: red;
+@media screen and (max-width: 596px) {
+  .logo {
+    width: 529px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .active {
@@ -157,6 +162,27 @@ header {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 596px) {
+  .floatleft1 {
+    float: none;
+    border: none;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .floatleft1 h1 {
+    color: white;
+    background-color: #2d2a2a;
+    width: fit-content;
+    height: fit-content;
+  }
+}
+
 .floatleft2 {
   display: flex;
   float: left;
@@ -167,7 +193,6 @@ header {
   text-align: center;
   align-items: center;
   font-size: 2vw;
-  margin-top: 20px;
   margin-bottom: 0px;
   font-size: 20px;
   color: darkblue;
@@ -206,6 +231,11 @@ header {
   height: 300px;
 }
 
+.aboutmes:hover {
+  background-color: lightgrey;
+  height: 100%;
+}
+
 .decks {
   position: relative;
   left: -50px;
@@ -215,6 +245,12 @@ header {
   width: 100%;
   margin-bottom: 100px;
 }
+
+.decks:hover {
+  background-color: lightgrey;
+  height: 100%;
+}
+
 .imagedeck {
   flex-wrap: wrap;
   max-height: 150px;
@@ -236,6 +272,11 @@ header {
   justify-content: left;
   width: 100%;
   height: 300px;
+}
+
+.contactmes:hover {
+  background-color: lightgrey;
+  height: 100%;
 }
 
 @media screen and (max-width: 596px) {
@@ -272,6 +313,7 @@ header {
   padding: 20px;
   justify-content: center;
   align-items: center;
+  margin: 0px;
 }
 
 .floatright3 a {
