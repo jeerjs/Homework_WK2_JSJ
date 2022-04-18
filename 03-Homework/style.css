@@ -101,7 +101,7 @@ header {
   width: 100%;
 }
 
-/* banner cover image settings */
+/* banner cover image settings-------------------------------------------------------------------- */
 .banner {
   text-align: center;
   color: black;
@@ -157,7 +157,7 @@ header {
   color: white;
 }
 
-/* about me H1 container */
+/* about me H1 container --------------------------------------------------------*/
 .floatleft1 {
   display: flex;
   float: left;
@@ -199,7 +199,16 @@ header {
     height: fit-content;
   }
 }
-/* My Work section left side */
+/* Section 1 float right paragraph------------ */
+.floatright1 {
+  padding: 30px;
+  float: right;
+  width: 70%;
+  justify-content: center;
+  width: auto;
+  align-items: center;
+}
+/* Section 2My Work section left side --------------------------------------------------------*/
 .floatleft2 {
   display: flex;
   float: left;
@@ -249,14 +258,6 @@ header {
   }
 }
 
-.floatright1 {
-  padding: 30px;
-  float: right;
-  width: 70%;
-  justify-content: center;
-  width: auto;
-  align-items: center;
-}
 /* Paragraph text  */
 .aboutmep {
   line-height: 4vw;
