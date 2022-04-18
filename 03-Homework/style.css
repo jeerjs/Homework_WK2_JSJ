@@ -178,6 +178,7 @@ header {
 
 @media screen and (max-width: 1000px) {
   .floatleft1 h1 {
+    display: flex;
     color: white;
     background-color: #2d2a2a;
     width: fit-content;
@@ -205,6 +206,40 @@ header {
   .floatleft2 {
     height: 300px;
     margin-bottom: 200px;
+    float: none;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    height: 100px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .imagedeck {
+    float: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .tile1 {
+    width: 49%;
+  }
+  .tile2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 596px) {
+  .floatleft2 h1 {
+    float: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -236,6 +271,7 @@ header {
 .aboutmes:hover {
   background-color: lightgrey;
   height: 100%;
+  border: solid white 5px;
 }
 
 .decks {
@@ -252,6 +288,7 @@ header {
 .decks:hover {
   background-color: lightgrey;
   height: 100%;
+  border: solid white 5px;
 }
 
 @media screen and (max-width: 596px) {
@@ -272,6 +309,10 @@ header {
   border-radius: 10%;
 }
 
+.tile1:hover {
+  border: red 5px;
+}
+
 .contactmes {
   display: flex;
   position: relative;
@@ -286,6 +327,7 @@ header {
 .contactmes:hover {
   background-color: lightgrey;
   height: 100%;
+  border: solid white 5px;
 }
 
 @media screen and (max-width: 596px) {
