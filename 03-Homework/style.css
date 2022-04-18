@@ -23,7 +23,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 120px;
+  height: 160px;
   background-color: white;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
@@ -48,6 +48,7 @@ nav ul li a {
   min-width: 30px;
   min-width: auto;
   margin: 20px;
+  margin-left: 100px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   color: #050505;
@@ -77,7 +78,7 @@ nav ul li a:hover {
   border: #050505;
   border-width: 5px;
   border-radius: 20px;
-  width: 300px;
+  width: 320px;
   min-width: 205px;
 }
 
@@ -168,7 +169,7 @@ header {
   justify-content: center;
   text-align: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 40px;
   color: darkblue;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url(../Assets/Images/Avatar.png);
@@ -207,7 +208,44 @@ header {
   justify-content: center;
   width: auto;
   align-items: center;
+  font: 20px;
 }
+/* Paragraph text  */
+.aboutmep {
+  line-height: 3vw;
+  padding: 2px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* change in size of text when screen size reduces */
+@media screen and (max-width: 596px) {
+  .aboutmep {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+/* this is the section c ontainer for about me */
+.aboutmes {
+  position: relative;
+  left: -50px;
+  margin: 50px;
+  justify-content: left;
+  width: 100%;
+  margin-bottom: 50px;
+  font-size: 15px;
+  height: 300px;
+}
+
+/* On hover display a border and differentr backgroubnd */
+.aboutmes:hover {
+  background-color: lightgrey;
+  height: 100%;
+  border: solid white 5px;
+}
+
 /* Section 2My Work section left side --------------------------------------------------------*/
 .floatleft2 {
   display: flex;
@@ -220,7 +258,7 @@ header {
   align-items: center;
   font-size: 2vw;
   margin-right: 15px;
-  font-size: 20px;
+  font-size: 40px;
   color: darkblue;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -256,40 +294,6 @@ header {
     text-align: center;
     width: 100%;
   }
-}
-
-/* Paragraph text  */
-.aboutmep {
-  line-height: 4vw;
-  padding: 2px;
-  font-size: 20px;
-}
-
-/* change in size of text when screen size reduces */
-@media screen and (max-width: 596px) {
-  .aboutmep {
-    font-size: 15px;
-    margin: 0px;
-  }
-}
-
-/* this is the section c ontainer for about me */
-.aboutmes {
-  position: relative;
-  left: -50px;
-  margin: 50px;
-  justify-content: left;
-  width: 100%;
-  margin-bottom: 50px;
-  font-size: 15px;
-  height: 300px;
-}
-
-/* On hover display a border and differentr backgroubnd */
-.aboutmes:hover {
-  background-color: lightgrey;
-  height: 100%;
-  border: solid white 5px;
 }
 
 /* !UNABLE TO DO ANY SORT OF FELX WRAP OR FLEX POSITIONING!! COULD NOT FIGURE IT OUT, THIS RELATES TO THE IMAGES IN SECTION 2 */
@@ -379,7 +383,7 @@ header {
   text-align: center;
   align-items: center;
   margin-top: 50px;
-  font-size: 15px;
+  font-size: 40px;
   color: darkblue;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 0px;
