@@ -432,4 +432,8 @@ header {
     padding: 5px;
     margin: 5px;
   }
+  .floatleft3 h1 {
+    font-size: 15px;
+    border: none;
+  }
 }
