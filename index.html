@@ -9,122 +9,121 @@
   </head>
 
   <body>
-    
     <header>
       <!-- Navigation bar -->
       <nav class="nav-container">
         <!--LOGO-->
-        <div><a href="#" class="logo">Jaswant Jeers Portfolio</a></div>
+        <div><a href="index.html" class="logo">Jaswant Jeers Portfolio</a></div>
         <!-- nav menu -->
 
         <div class="nav-list">
           <ul>
-            <li><a href="#" class="active">About me</a></li>
-            <li><a href="#" class="active"> Work </a></li>
-            <li><a href="#" class="active"> Contact me</a></li>
-            <li><a href="#" class="active"> Resume </a></li>
+            <li><a href="#aboutme" class="active">About me</a></li>
+            <li><a href="#mywork" class="active"> Work </a></li>
+            <li><a href="#contactme" class="active"> Contact me</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    
+
     <main>
-    <div class="banner">
-      <h1>Welcome To My Portfolio</h1>
-      <div>
-        <a class="btn" href="#">View My Work</a>
-      </div>
- 
-    </div>
-    
-      <!-- Main application content -->
-      <!-- 1st Section is about me -->
-      <section class="aboutmes">
+      <div class="banner">
+        <h1>Welcome To My Portfolio</h1>
         <div>
-        <h1 class=" floatleft1">About Me</h1> 
-      </div>
-      <div>
-        <p class="aboutmep">
-          I am a inspiring software developer. I am currently undertaking a
-          bootcamp course at Birmingham University which is helping me develop
-          my front end skills in HTML, CSS and JAVA. Currently i am a qualified
-          Pharmacist working in the primary care sector. This course will allow
-          me to enhance the integrations of systems between different parts of
-          the primary care strucutre. It will also allow me to develp better
-          systems for internal use to increase proficiency and productivity.
-        </p>
+          <a class="btn" href="#mywork">View My Work</a>
+        </div>
       </div>
 
+      <!-- Main application content -->
+      <!-- 1st Section is about me -->
+      <section id="aboutme" class="aboutmes">
+        <div>
+          <h1 class="floatleft1">About Me</h1>
+        </div>
+        <div>
+          <p class="aboutmep">
+            I am a inspiring software developer. I am currently undertaking a
+            bootcamp course at Birmingham University which is helping me develop
+            my front end skills in HTML, CSS and JAVA. Currently i am a
+            qualified Pharmacist working in the primary care sector. This course
+            will allow me to enhance the integrations of systems between
+            different parts of the primary care strucutre. It will also allow me
+            to develp better systems for internal use to increase proficiency
+            and productivity.
+          </p>
+        </div>
       </section>
 
       <!-- Section About My Work -->
-      <section class="decks">
+      <section id="mywork" class="decks">
         <!-- Left floating  title -->
-        <Div>
-        <h1 class="floatleft2">My Work</h1>
-      </Div>
+        <div>
+          <h1 class="floatleft2">My Work</h1>
+        </div>
+
         <!-- image tiles/decks -->
-      <div class="Imagedeck">
-      <img class="tile2"
-          src="Assets\Images\Image Slide.jpg"
-          alt="MyWork"
-          width="65.0%"
-          height="66.0%"
-        />
-        <img class="tile1"
-          
-          src="Assets\Images\Image Slide.jpg"
-          alt="MyWork"
-          width="16.0%"
-          height="16.0%"
-        />
-        <img class="tile1"
-          
-          src="Assets\Images\Image Slide.jpg"
-          alt="MyWork"
-          width="16.0%"
-          height="16.0%"
-        />
-        <img class="tile1"
-          
-          src="Assets\Images\Image Slide.jpg"
-          alt="MyWork"
-          width="16.0%"
-          height="16.0%"
-        />
-        <img class="tile1"
-         
-          src="Assets\Images\Image Slide.jpg"
-          alt="MyWork"
-          width="16.0%"
-          height="16.0%"
-        />
-      </div>
+        <div class="Imagedeck">
+          <div class="tile2">
+            <p>
+              <a href="https://github.com/jeerjs/Homework_1"></a>
+              <img
+                src="./Assets/Images/Refractory project.png"
+                alt="MyWork"
+                width="50.0%"
+                height="50.0%"
+              />
+            </p>
+          </div>
+
+          <div>
+            <img
+              class="tile1"
+              src="Assets\Images\Image Slide.jpg"
+              alt="MyWork"
+              width="15.0%"
+              height="15.0%"
+            />
+          </div>
+
+          <img
+            class="tile1"
+            src="Assets\Images\Image Slide.jpg"
+            alt="MyWork"
+            width="15.0%"
+            height="15.0%"
+          />
+          <img
+            class="tile1"
+            src="Assets\Images\Image Slide.jpg"
+            alt="MyWork"
+            width="15.0%"
+            height="15.0%"
+          />
+          <img
+            class="tile1"
+            src="Assets\Images\Image Slide.jpg"
+            alt="MyWork"
+            width="15.0%"
+            height="15.0%"
+          />
+        </div>
       </section>
 
       <!-- section about contact me -->
-      <section class="contactmes">
+      <section id="contactme" class="contactmes">
         <div class="floatleft3">
-
-        <h1>Contact Me</h1>
-
+          <h1>Contact Me</h1>
         </div>
 
         <div class="floatright3">
-        <a  href="#">Email</a>
-        <a  href="#">Linkdin</a>
-        <a  href="#">Facebook</a>
-        <a  href="#">Twitter</a>
-      </div>
-
-      </div class="contactform">
+          <a href="mailto:Jaswant.Jeers@mwphillips.co.uk">Email</a>
+          <a href="https://www.linkedin.com/in/jaswant-jeers-533287125/"
+            >Linkdin</a
+          >
+          <a href="https://www.facebook.com/jeerjaswant">Facebook</a>
+          <a href="https://twitter.com/jazzjeer?lang=en-GB">Twitter</a>
         </div>
       </section>
-
-      <!-- input form for contact details -->
-
     </main>
-
   </body>
-
 </html>
