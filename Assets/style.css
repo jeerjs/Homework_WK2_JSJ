@@ -292,10 +292,11 @@ header {
 /* change in size of text when screen size reduces */
 @media screen and (max-width: 596px) {
   .aboutmep {
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px;
     margin-bottom: 200px;
     line-height: 15vw;
+    text-align: center;
     text-align: center;
   }
 }
@@ -328,7 +329,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   display: flex;
-  height: 1500px;
+  height: 1200px;
   width: 400px;
   border-right: solid #050505 5px;
   text-align: center;
@@ -397,8 +398,8 @@ header {
 /* CONTACT ME SECTION-------------------------------------------------------------------------- */
 .contactmes {
   position: absolute;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   left: -50px;
@@ -410,13 +411,13 @@ header {
 @media screen and (max-width: 800px) {
   .contactmes {
     flex-direction: row;
+    justify-items: center;
   }
 }
 
 .floatleft3 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   display: flex;
   height: 300px;
   border-right: solid #050505 5px;
@@ -446,6 +447,7 @@ header {
   justify-content: center;
   align-items: center;
   font: 20px;
+  left: 600px;
 }
 
 .anemail,
