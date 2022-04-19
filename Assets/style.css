@@ -458,7 +458,7 @@ header {
   width: 100%;
 }
 
-@media screen and (max-width: 596px) {
+@media screen and (max-width: 768px) {
   .contactmes {
     flex-direction: column;
     justify-items: center;
@@ -487,17 +487,18 @@ header {
   width: 400px;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 768px) {
   .floatleft3 {
     border-right: none;
     border-bottom: solid black 5px;
     height: 300px;
     text-align: center;
-  }
-}
+  } */
+/* } */
 
-@media screen and (max-width: 596px) {
+@media screen and (max-width: 768px) {
   .floatleft3 {
+    flex-direction: column;
     border-right: none;
     border-bottom: solid black 5px;
     height: 500px;
