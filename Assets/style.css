@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+}
+
+/* default body css settings */
+body {
+  display: 100%;
+  background-color: silver;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* NAV BAR_______________________________________________________________ */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+  background-color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* NAV BAR FOT MOBILE SCREEN */
+@media screen and (max-width: 596px) {
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    height: 100%;
+  }
+}
+
+/* Unordered list to dsiplay flex */
+nav ul {
+  display: flex;
+}
+/* Sets the look of the anchors */
+nav ul li a {
+  flex-wrap: wrap;
+  min-width: 30px;
+  min-width: auto;
+  margin: 20px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #050505;
+  font-weight: bold;
+}
+
+/* Change the anchors to red on hover */
+nav ul li a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-list {
+    position: relative;
+    top: 0px;
+    margin: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Logo design */
+.logo {
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  font-size: 30px;
+  background-color: silver;
+  padding: 60px;
+  border: #050505;
+  border-width: 5px;
+  border-radius: 20px;
+  width: 320px;
+  min-width: 205px;
+}
+
+/* logo for mobile screen */
+@media screen and (max-width: 596px) {
+  .logo {
+    width: 529px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+header {
+  top: 0px;
+  width: 100%;
+}
+
+/* banner cover image settings-------------------------------------------------------------------- */
+.banner {
+  flex-wrap: wrap;
+  text-align: center;
+  color: black;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  background-image: linear-gradient(
+      to top,
+      rgba(20, 20, 20, 0.7),
+      rgba(133, 133, 133, 0.2)
+    ),
+    url(../Assets/Images/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg);
+  height: 1000px;
+  margin-top: 30px;
+  object-fit: contain;
+}
+
+/* revert linear gradient on hover */
+.banner:hover {
+  background-image: url(../Assets/Images/sabri-tuzcu-wunVFNvqhfE-unsplash.jpg);
+}
+
+/* settings of the header in the banner , positiion is relative to the parent container*/
+.banner h1 {
+  position: relative;
+  top: 100px;
+  background-color: white;
+  font-family: Helvetica, sans-serif;
+  border-radius: 15px;
+  height: 100px;
+  padding: 10px;
+  font-size: 60px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 770px) {
+  .banner h1 {
+    height: 200px;
+  }
+
+  .banner div a {
+    position: relative;
+    top: 250px;
+    width: 100px;
+    height: 200px;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  /* Button in the banner */
+  .btn:hover {
+    background-color: #050505;
+    color: white;
+  }
+
+  /* about me H1 container --------------------------------------------------------*/
+
+  .aboutmes {
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    font-size: 15px;
+    height: 600px;
+  }
+
+  /* On hover display a border and differentr backgroubnd */
+  .aboutmes:hover {
+    background-color: lightgrey;
+    height: 100%;
+    border: solid white 5px;
+  }
+
+  .floatleft1 {
+    /* display: flex; */
+    height: 250px;
+    width: 30%;
+    border-right: solid #050505 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../Assets/Images/Avatar.png);
+    background-position: left;
+    background-size: 100px;
+    background-repeat: no-repeat;
+  }
+
+  /* settings for mobile screen for about me section */
+  @media screen and (max-width: 596px) {
+    .floatleft1 {
+      float: none;
+      border: none;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .floatleft1 h1 {
+      display: flex;
+      color: white;
+      width: fit-content;
+      height: fit-content;
+      float: right;
+    }
+  }
+  /* Section 1 float right paragraph------------ */
+  .floatright1 {
+    flex-direction: row;
+    padding: 30px;
+    float: right;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    font: 20px;
+  }
+  /* Paragraph text  */
+  .aboutmep {
+    flex-wrap: wrap;
+    line-height: 3vw;
+    padding: 2px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* change in size of text when screen size reduces */
+  @media screen and (max-width: 596px) {
+    .aboutmep {
+      font-size: 15px;
+      margin: 0px;
+    }
+  }
+
+  /* Section 2My Work section left side --------------------------------------------------------*/
+
+  .imageparentcontainer {
+    align-items: center;
+    width: 70%;
+    height: 700px;
+  }
+
+  .floatleft2 {
+    display: flex;
+    height: 250px;
+    width: 30%;
+    border-right: solid #050505 5px;
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 0px;
+  }
+
+  .carddeck {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    float: right;
+    width: 70%;
+  }
+
+  .card0,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    flex: 1 0 600px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    width: 20%;
+    float: right;
+  }
+
+  /* CONTACT ME SECTION-------------------------------------------------------------------------- */
+  .contactmes {
+    display: flex;
+    position: relative;
+    left: -50px;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    justify-content: left;
+    width: 100%;
+    height: 300px;
+  }
+
+  .contactmes:hover {
+    background-color: lightgrey;
+    height: 100%;
+    border: solid white 5px;
+  }
+
+  @media screen and (max-width: 596px) {
+    .contactmes {
+      flex-direction: column;
+    }
+    .floatright3 {
+      height: 300px;
+    }
+  }
+
+  .floatleft3 {
+    display: flex;
+    float: left;
+    height: 300px;
+    width: 30%;
+    min-width: 30%;
+    border-right: solid #050505 3px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 40px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0px;
+  }
+
+  .floatright3 {
+    display: flex;
+    float: right;
+    width: 70%;
+    min-width: 70%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  .floatright3 a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10%;
+    margin-left: 5%;
+    font-weight: bold;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .floatright3 {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .floatright3 a {
+      padding: 5px;
+      margin: 5px;
+    }
+    .floatleft3 h1 {
+      font-size: 15px;
+      border: none;
+    }
+  }
+}
