@@ -384,6 +384,7 @@ header {
 .card4,
 .card5,
 .card6 {
+  position: relative;
   padding: 10px;
   text-align: center;
   border-style: solid;
@@ -410,11 +411,24 @@ header {
   background-repeat: no-repeat;
   object-fit: fill;
 }
-
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
 .card0:hover {
-  -ms-transform: scale(1.2); /* IE 9 */
-  -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
+}
+
+.imagetag1 {
+  z-index: 3;
+  position: relative;
+  top: 100px;
+  left: 10px;
+  background-color: black;
+  padding: 30px;
+  width: fit-content;
+  color: white;
+  border-radius: 30px;
 }
 
 /* CONTACT ME SECTION-------------------------------------------------------------------------- */
