@@ -153,246 +153,310 @@ header {
   .banner h1 {
     height: 200px;
   }
+}
 
-  .banner div a {
-    position: relative;
-    top: 250px;
-    width: 100px;
-    height: 200px;
-    font-family: Helvetica, sans-serif;
-    font-size: 30px;
-    margin: 20px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 10px;
-  }
+.banner div a {
+  position: relative;
+  top: 250px;
+  width: 100px;
+  height: 200px;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 20px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
 
-  /* Button in the banner */
-  .btn:hover {
-    background-color: #050505;
-    color: white;
-  }
+/* Button in the banner */
+.btn:hover {
+  background-color: #050505;
+  color: white;
+}
 
-  /* about me H1 container --------------------------------------------------------*/
+/* about me H1 container ----------------------------------------------------------------------------------*/
+.aboutmes {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  font-size: 15px;
+  height: 300px;
+  justify-content: center;
+}
 
+@media screen and (max-width: 1000px) {
   .aboutmes {
-    /* display: flex;
-    flex-direction: row; */
-    width: 100%;
-    margin-bottom: 200px;
-    margin-top: 100px;
-    font-size: 15px;
-    height: 600px;
+    flex-direction: column;
+    margin-top: 500px;
+    margin-bottom: 500px;
   }
+}
 
-  /* On hover display a border and differentr backgroubnd */
-  .aboutmes:hover {
-    background-color: lightgrey;
-    height: 100%;
-    border: solid white 5px;
-  }
-
+.floatleft1 {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  height: 300px;
+  width: 500px;
+  border-right: solid #050505 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  margin: 10px;
+  left: 0px;
+  height: 500px;
+}
+@media screen and (max-width: 596px) {
   .floatleft1 {
-    /* display: flex; */
-    height: 250px;
-    width: 30%;
-    border-right: solid #050505 5px;
-    text-align: center;
-    align-items: center;
-    font-size: 40px;
-    color: darkblue;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../Assets/Images/Avatar.png);
-    background-position: left;
-    background-size: 100px;
-    background-repeat: no-repeat;
+    flex-direction: column;
+    border: none;
+    margin-top: 1000px;
   }
+}
 
-  /* settings for mobile screen for about me section */
-  @media screen and (max-width: 596px) {
-    .floatleft1 {
-      float: none;
-      border: none;
-      justify-content: center;
-      justify-items: center;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
+.floatleft1 h1 {
+  position: relative;
+  padding: 30px;
+}
 
-  @media screen and (max-width: 1000px) {
-    .floatleft1 h1 {
-      display: flex;
-      color: white;
-      width: fit-content;
-      height: fit-content;
-      float: right;
-    }
-  }
-  /* Section 1 float right paragraph------------ */
-  .floatright1 {
-    flex-direction: row;
-    padding: 30px;
-    float: right;
-    width: 70%;
+.avatar {
+  position: relative;
+  width: 150px;
+  height: 300px;
+  float: left;
+  background-image: url(./Images/Avatar.png);
+  background-position: left;
+  background-size: 150px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  align-items: left;
+  left: 0px;
+}
+
+/* settings for mobile screen for about me section*/
+@media screen and (max-width: 1000px) {
+  .floatleft1 {
+    flex-direction: column;
+    float: none;
+    border: none;
     justify-content: center;
-    align-items: center;
-    font: 20px;
-  }
-  /* Paragraph text  */
-  .aboutmep {
-    flex-wrap: wrap;
-    line-height: 3vw;
-    padding: 2px;
-    font-size: 25px;
+    justify-items: center;
     text-align: center;
-    margin-bottom: 10px;
-  }
-
-  /* change in size of text when screen size reduces */
-  @media screen and (max-width: 596px) {
-    .aboutmep {
-      font-size: 15px;
-      margin: 0px;
-    }
-  }
-
-  /* Section 2My Work section left side --------------------------------------------------------*/
-
-  .imageparentcontainer {
-    align-items: center;
-    width: 70%;
-    height: 700px;
-  }
-
-  .floatleft2 {
-    display: flex;
-    height: 250px;
-    width: 30%;
-    border-right: solid #050505 5px;
-    text-align: center;
-    align-items: center;
-    font-size: 40px;
-    color: darkblue;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
-    margin: 0px;
-  }
-
-  .carddeck {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: right;
-    align-items: center;
-    float: right;
-    width: 70%;
-  }
-
-  .card0,
-  .card1,
-  .card2,
-  .card3,
-  .card4,
-  .card5 {
-    flex: 1 0 600px;
-    padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    width: 20%;
-    float: right;
-  }
-
-  /* CONTACT ME SECTION-------------------------------------------------------------------------- */
-  .contactmes {
-    display: flex;
-    position: relative;
-    left: -50px;
-    flex-wrap: wrap;
-    margin: 0 50px;
-    justify-content: left;
     width: 100%;
-    height: 300px;
-  }
-
-  .contactmes:hover {
-    background-color: lightgrey;
-    height: 100%;
-    border: solid white 5px;
-  }
-
-  @media screen and (max-width: 596px) {
-    .contactmes {
-      flex-direction: column;
-    }
-    .floatright3 {
-      height: 300px;
-    }
-  }
-
-  .floatleft3 {
-    display: flex;
-    float: left;
-    height: 300px;
-    width: 30%;
-    min-width: 30%;
-    border-right: solid #050505 3px;
-    justify-content: center;
+    margin-bottom: 20px;
+    height: 700px;
     text-align: center;
-    align-items: center;
-    margin-top: 50px;
-    font-size: 40px;
-    color: darkblue;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: 0px;
   }
+}
 
-  .floatright3 {
+@media screen and (max-width: 1000px) {
+  .floatleft1 h1 {
     display: flex;
+    color: white;
+    width: fit-content;
+    height: fit-content;
     float: right;
-    width: 70%;
-    min-width: 70%;
-    padding: 20px;
+    font-size: 60px;
+    border: none;
+  }
+}
+/* Section 1 float right paragraph------------ */
+.floatright1 {
+  flex-direction: row;
+  padding: 30px;
+  float: right;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  font: 20px;
+}
+/* Paragraph text  */
+.aboutmep {
+  flex-wrap: wrap;
+  line-height: 4vw;
+  padding: 2px;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* change in size of text when screen size reduces */
+@media screen and (max-width: 596px) {
+  .aboutmep {
+    font-size: 30px;
+    margin: 10px;
+    margin-bottom: 200px;
+    line-height: 15vw;
+    text-align: center;
+  }
+}
+
+/* Section 2My Work section left side ------------------------------------------------------------------------------------------------------------*/
+
+.imageparentcontainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  font-size: 15px;
+  height: 1500px;
+  justify-content: center;
+  margin-top: 400px;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .imageparentcontainer {
+    flex-direction: column;
+    margin-top: 1000px;
     justify-content: center;
     align-items: center;
-    margin: 0px;
   }
+}
 
-  .floatright3 a {
-    text-decoration: none;
-    display: flex;
+.floatleft2 {
+  flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  height: 1500px;
+  width: 400px;
+  border-right: solid #050505 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  margin: 10px;
+  left: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+  .floatleft2 {
+    border-bottom: solid black 5px;
+    border-right: none;
+    height: 300px;
+  }
+}
+
+.carddeck {
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  float: right;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  font: 20px;
+  height: 1000px;
+}
+
+.card0,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  width: 50%;
+  float: right;
+}
+
+.card0 {
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  float: right;
+  object-fit: fill;
+  background-image: linear-gradient(
+      to top,
+      rgba(20, 20, 20, 0.7),
+      rgba(133, 133, 133, 0.2)
+    ),
+    url(../Assets/Images/Refractory\ project.png);
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+
+/* CONTACT ME SECTION-------------------------------------------------------------------------- */
+.contactmes {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  left: -50px;
+  height: 300px;
+  margin: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .contactmes {
     flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    top: 30px;
-    justify-content: space-between;
-    font-size: 20px;
-    color: darkblue;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 10%;
-    margin-left: 5%;
-    font-weight: bold;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
   }
+}
 
-  @media screen and (max-width: 800px) {
-    .floatright3 {
-      flex-direction: column;
-    }
-  }
+.floatleft3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  height: 300px;
+  border-right: solid #050505 5px;
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: darkblue;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  margin: 10px;
+  padding-right: 180px;
+}
 
-  @media screen and (max-width: 800px) {
-    .floatright3 a {
-      padding: 5px;
-      margin: 5px;
-    }
-    .floatleft3 h1 {
-      font-size: 15px;
-      border: none;
-    }
+@media screen and (max-width: 1200px) {
+  .floatleft3 {
+    border-right: none;
+    border-bottom: solid black 5px;
+    height: 300px;
   }
+}
+
+.floatright3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  font: 20px;
+}
+
+.anemail,
+.anlink,
+.anface,
+.antwitter {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px;
+  font-weight: bold;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: fit-content;
 }

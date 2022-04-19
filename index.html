@@ -18,7 +18,7 @@
 
         <div class="nav-list">
           <ul>
-            <li><a href="#aboutme" class="active">About me</a></li>
+            <li><a href="#about" class="active">About me</a></li>
             <li><a href="#mywork" class="active"> Work </a></li>
             <li><a href="#contactme" class="active"> Contact me</a></li>
           </ul>
@@ -37,21 +37,24 @@
       <!-- Main application content -->
       <!-- 1st Section is about me -->
 
-      <section class="aboutmes">
-        <div class="floatleft1">
-          <h1>About Me</h1>
-        </div>
-        <div class="aboutmep">
-          <p>
-            I am a inspiring software developer. I am currently undertaking a
-            bootcamp course at Birmingham University which is helping me develop
-            my front end skills in HTML, CSS and JAVA. Currently i am a
-            qualified Pharmacist working in the primary care sector. This course
-            will allow me to enhance the integrations of systems between
-            different parts of the primary care strucutre. It will also allow me
-            to develp better systems for internal use to increase proficiency
-            and productivity.
-          </p>
+      <section id="about">
+        <div class="aboutmes">
+          <div class="floatleft1">
+            <h1>About Me</h1>
+            <div class="avatar"></div>
+          </div>
+          <div class="aboutmep">
+            <p>
+              I am a inspiring software developer. I am currently undertaking a
+              bootcamp course at Birmingham University which is helping me
+              develop my front end skills in HTML, CSS and JAVA. Currently i am
+              a qualified Pharmacist working in the primary care sector. This
+              course will allow me to enhance the integrations of systems
+              between different parts of the primary care strucutre. It will
+              also allow me to develp better systems for internal use to
+              increase proficiency and productivity.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -65,11 +68,10 @@
         <!-- image tiles/decks -->
 
         <div class="carddeck">
-          <img
-            class="card0"
-            src="./Assets/Images/PlaceHolder.jpg"
-            alt="MyWork"
-          />
+          <div class="labelonimage">
+            <img class="card0" height="800px" alt="MyWork" />
+          </div>
+
           <img
             class="card1"
             ;
@@ -88,6 +90,7 @@
             src="./Assets/Images/PlaceHolder.jpg"
             alt="MyWork"
           />
+
           <img
             class="card4"
             ;
@@ -104,12 +107,20 @@
         </div>
 
         <div class="floatright3">
-          <a href="mailto:Jaswant.Jeers@mwphillips.co.uk">Email</a>
-          <a href="https://www.linkedin.com/in/jaswant-jeers-533287125/"
-            >Linkdin</a
-          >
-          <a href="https://www.facebook.com/jeerjaswant">Facebook</a>
-          <a href="https://twitter.com/jazzjeer?lang=en-GB">Twitter</a>
+          <div class="anemail">
+            <a href="mailto:Jaswant.Jeers@mwphillips.co.uk">Email</a>
+          </div>
+          <div class="anlink">
+            <a href="https://www.linkedin.com/in/jaswant-jeers-533287125/"
+              >Linkdin</a
+            >
+          </div>
+          <div class="anface">
+            <a href="https://www.facebook.com/jeerjaswant">Facebook</a>
+          </div>
+          <div class="antwitter">
+            <a href="https://twitter.com/jazzjeer?lang=en-GB">Twitter</a>
+          </div>
         </div>
       </section>
     </main>
